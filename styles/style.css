@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    --max-width : 600px;
+    --max-height : 50 px;
+    --font-family: 'Barlow Semi Condensed',sans-serif;
+    --default-padding : 25px;
+    --bg-color : hsl(30, 38%, 92%);
+    --border-radius : 5px;
+    --animation-timing:.2s ; 
+    --shadow-default:rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display : flex;
+    flex-direction: row;
+    justify-content : center;
+    padding : 150px;
+    background-color: var(--Light-grayish-blue);
+    min-height: 100vh;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+    line-height: 15px;
+}
+
+.container_content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+img{
+    border-radius: 50px;
+    width: 30px;
+}
+.collection_of_four{
+    display: flex;
+    flex-direction: column;
+    width: 1000%;
+    margin-right: 25px;
+    height: 100%;
+}
+.collection_of_2_1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.collection_of_2_2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.the_tallest{
+    display: flex;
+    height: 100%;
+}
+
+.daniel_container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Moderate-violet);
+    padding: 20px;
+    padding-right:20px ;
+    width: 70%;
+    border-radius: var(--border-radius);
+    margin-right: 25px;
+    margin-bottom: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-default);
+}
+.jonathan_container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-dark-grayish-blue);
+    padding: 20px;
+    padding-right:20px ;
+    width: 30%;
+    border-radius: var(--border-radius);
+    margin-bottom: 25px;
+    box-shadow: var(--shadow-default);
+}
+.jeanette_container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    padding: 20px;
+    padding-right:20px ;
+    width: 30%;
+    border-radius: var(--border-radius);
+    margin-right: 25px;
+    box-shadow: var(--shadow-default);
+    color:var(--Very-dark-grayish-blue);
+}
+.patrick_container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-dark-blackish-blue);
+    padding: 20px;
+    padding-right:20px ;
+    width: 70%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-default);
+}
+.kira_container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    padding: 20px;
+    padding-right:20px ;
+    width: 85%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-default);
+    color:var(--Very-dark-grayish-blue);
+}
+.sub_profile{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+.quotation{
+    border-radius: 0px;
+    margin: -20px 10px 0px 220px;
+    width:100px ;
+}
+.container_image{
+    margin-bottom: 50px;
+}
+#bordered_image{
+    border: solid rgb(181, 28, 241) 2px;
+}
+.container_name{
+    margin-left: 15px;
+}
+.name_verified{
+    font-size: 11px;
+    opacity: 0.5;
+}
+.container_title{
+    font-weight: 600;
+    font-size: 20px;
+    margin: -30px 0px 20px 0px;
+    line-height: 25px;
+}
+.container_description{
+    opacity: 0.7;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+.name_verified_black{
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+
+@media (max-width:700px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 0px 50px 40px;
+    }
+    .container_content{
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+    }
+    .collection_of_four{
+        flex-direction: column;
+        width: 100%;
+    }
+    .collection_of_2_1{
+        flex-direction: column;
+    }
+    .collection_of_2_2{
+        flex-direction: column;
+    }
+    .daniel_container{
+        width: 85%;
+    }
+    .quotation{
+        border-radius: 0px;
+        margin: -15px 10px 0px 15%;
+        width:80px ;
+        height: 80px;
+    }
+    .jonathan_container{
+        width: 85%;
+    }
+    .jeanette_container{
+        width: 85%;
+    }
+    .patrick_container{
+        width: 85%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .kira_container{
+        width: 85%;
+    }
+
+
+}
+
